@@ -41,7 +41,7 @@ if(!isset($_POST['submit'])){
 					exit();
 				} elseif ($hashpasswordcheck == true){
 					
-					//logs in user (department varibale used to determine which pages user has access to)
+					//logs in user (department variable used to determine which pages user has access to)
 					$_SESSION['employeeId'] = $row['EmployeeId'];
 					$_SESSION['department'] = $row['DepartmentId'];
 					header("Location: ../profile.php?login=success");
