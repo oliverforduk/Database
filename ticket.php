@@ -66,13 +66,11 @@ if(!isset($_SESSION['ticketId'])){
 	<tr>
 		<th>Title</th>
 		<th>Description</th>
-		<th>Status</th>
 		<th>Selection</th>
 	</tr>
 	
 	<tr>
 		<td><?php echo $row['TicketName']; ?></td>
-		<td><?php echo $row['TicketDesc']; ?></td>
 		<td><?php echo $row['TicketDesc']; ?></td>
 		<td>
 			<form action="includes/processticket.php" method="POST">

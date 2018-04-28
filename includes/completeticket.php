@@ -17,6 +17,6 @@ if(!isset($_POST['submit'])){
 			WHERE TicketId = '$ticketId';";
 	mysqli_query($conn, $sql);
 	
-	header("Location: ../profile.php?ticketcompleted");
+	header("Location: ../ticketoptions.php?ticketcompleted");
 	exit();
 }

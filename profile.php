@@ -79,7 +79,6 @@ if(!isset($_SESSION['employeeId'])){
 	<tr>
 		<th>Title</th>
 		<th>Description</th>
-		<th>Status</th>
 		<th>Selection</th>
 	</tr>
 <?php
@@ -88,7 +87,6 @@ if(!isset($_SESSION['employeeId'])){
 ?>
 	<tr>
 		<td><?php echo $row['TicketName']; ?></td>
-		<td><?php echo $row['TicketDesc']; ?></td>
 		<td><?php echo $row['TicketDesc']; ?></td>
 		<td>
 			<form action="includes/selectticket.php" method="POST">
@@ -116,7 +114,6 @@ if(!isset($_SESSION['employeeId'])){
 	<tr>
 		<th>Title</th>
 		<th>Description</th>
-		<th>Status</th>
 		<th>Selection</th>
 	</tr>
 <?php
@@ -125,7 +122,6 @@ if(!isset($_SESSION['employeeId'])){
 ?>
 	<tr>
 		<td><?php echo $row['TicketName']; ?></td>
-		<td><?php echo $row['TicketDesc']; ?></td>
 		<td><?php echo $row['TicketDesc']; ?></td>
 		<td>
 			<form action="ticket.php" method="POST">

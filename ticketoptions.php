@@ -52,7 +52,7 @@ if($_SESSION['department'] !== "1"){
 	<tr>
 		<td><?php echo $row['TicketName']; ?></td>
 		<td><?php echo $row['TicketDesc']; ?></td>
-		<td><?php echo $row['TicketDesc']; ?></td>
+		<td><?php echo $row['status']; ?></td>
 		<td>
 			<form action="ticket.php" method="POST">
 				<button value="<?php echo $ticketId; ?>" name="submit">View Ticket</button>
@@ -84,7 +84,6 @@ if($_SESSION['department'] !== "1"){
   <tr>
     <th>Title</th>
     <th>Description</th>
-    <th>Status</th>
 	<th>Ticket Options</th>
   </tr>
 <?php
@@ -93,7 +92,6 @@ if($_SESSION['department'] !== "1"){
 ?>
 	<tr>
 		<td><?php echo $row['TicketName']; ?></td>
-		<td><?php echo $row['TicketDesc']; ?></td>
 		<td><?php echo $row['TicketDesc']; ?></td>
 		<td>
 			<form action="ticket.php" method="POST">

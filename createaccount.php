@@ -11,7 +11,7 @@ if($_SESSION['department'] !== "1"){
 			FROM Employee;";
 	$result = mysqli_query($conn, $sql);
 	$nextId = mysqli_num_rows($result);
-	$nextId = $nextId + 1;
+	$nextId = $nextId + 5;
 ?>
 <html lang="en">
 <link href="css/bootstrap.min.css" rel="stylesheet">
